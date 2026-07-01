@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Pixelify_Sans, VT323 } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const pixelifySans = Pixelify_Sans({
+  variable: "--font-pixel-heading",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const vt323 = VT323({
+  variable: "--font-pixel-body",
   subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -18,10 +20,10 @@ export const metadata: Metadata = {
 };
 
 const NAV_LINKS = [
-  { href: "/", label: "Dashboard" },
-  { href: "/papers", label: "Past Papers" },
-  { href: "/scores", label: "Score Log" },
-  { href: "/syllabus", label: "Syllabus" },
+  { href: "/", label: "🏠 Farm", sub: "Dashboard" },
+  { href: "/papers", label: "📜 Quests", sub: "Past Papers" },
+  { href: "/scores", label: "⭐ Harvest", sub: "Score Log" },
+  { href: "/syllabus", label: "🌱 Crops", sub: "Syllabus" },
 ];
 
 export default function RootLayout({
@@ -32,19 +34,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${pixelifySans.variable} ${vt323.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
-        <nav className="border-b bg-white px-6 py-3 flex gap-6">
-          {NAV_LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-slate-600 hover:text-slate-900"
-            >
-              {link.label}
-            </a>
-          ))}
+      <body className="min-h-full flex flex-col sv-sky">
+        <nav className="sv-nav">
+          <span className="sv-nav-title">StudyOS</span>
+          <div className="sv-nav-links">
+            {NAV_LINKS.map((link) => (
+              <a key={link.href} href={link.href} className="sv-nav-link">
+                {link.label}
+              </a>
+            ))}
+          </div>
         </nav>
         <main className="flex-1 p-6 max-w-5xl w-full mx-auto">{children}</main>
       </body>

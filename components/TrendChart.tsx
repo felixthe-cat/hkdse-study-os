@@ -25,31 +25,47 @@ function toPoints(values: number[]): string {
 
 export default function TrendChart({ values, labels }: { values: number[]; labels: string[] }) {
   if (values.length === 0) {
-    return <p className="text-sm text-slate-400">No scored attempts logged yet.</p>;
+    return <p className="text-sv-text-muted italic">No scored attempts logged yet.</p>;
   }
   const avg = rollingAverage(values, 3);
   return (
-    <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full max-w-xl">
-      <line x1={PAD} y1={HEIGHT - PAD} x2={WIDTH - PAD} y2={HEIGHT - PAD} stroke="#e2e8f0" />
-      <line x1={PAD} y1={PAD} x2={PAD} y2={HEIGHT - PAD} stroke="#e2e8f0" />
-      <polyline points={toPoints(values)} fill="none" stroke="#2563eb" strokeWidth={2} />
+    <svg
+      viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+      className="w-full max-w-xl bg-sv-panel-alt border-2 border-sv-border-mid"
+    >
+      <line x1={PAD} y1={HEIGHT - PAD} x2={WIDTH - PAD} y2={HEIGHT - PAD} stroke="#a9713f" />
+      <line x1={PAD} y1={PAD} x2={PAD} y2={HEIGHT - PAD} stroke="#a9713f" />
+      <polyline points={toPoints(values)} fill="none" stroke="#4c7a28" strokeWidth={3} />
       <polyline
         points={toPoints(avg)}
         fill="none"
-        stroke="#94a3b8"
-        strokeWidth={1.5}
-        strokeDasharray="4 3"
+        stroke="#c17f24"
+        strokeWidth={2}
+        strokeDasharray="5 4"
       />
       {values.map((v, i) => {
         const stepX = values.length > 1 ? (WIDTH - PAD * 2) / (values.length - 1) : 0;
         const x = PAD + i * stepX;
         const y = HEIGHT - PAD - (v / 100) * (HEIGHT - PAD * 2);
-        return <circle key={i} cx={x} cy={y} r={3} fill="#2563eb" />;
+        return <rect key={i} x={x - 3} y={y - 3} width={6} height={6} fill="#4c7a28" />;
       })}
-      <text x={PAD} y={14} fontSize={10} fill="#64748b">
+      <text
+        x={PAD}
+        y={14}
+        fontSize={12}
+        fill="#4a2f1c"
+        fontFamily="var(--font-pixel-body), monospace"
+      >
         {labels[0]}
       </text>
-      <text x={WIDTH - PAD} y={14} fontSize={10} fill="#64748b" textAnchor="end">
+      <text
+        x={WIDTH - PAD}
+        y={14}
+        fontSize={12}
+        fill="#4a2f1c"
+        textAnchor="end"
+        fontFamily="var(--font-pixel-body), monospace"
+      >
         {labels[labels.length - 1]}
       </text>
     </svg>

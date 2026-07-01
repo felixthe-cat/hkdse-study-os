@@ -1,26 +1,241 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------
+   Stardew Valley-inspired theme: parchment/wood UI panels over a
+   soft farm-field sky, hard-edged (no blur) pixel-art shadows,
+   chunky borders, harvest-gold + crop-green accents.
+   --------------------------------------------------------------- */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --sv-panel: #fdf3d7;
+  --sv-panel-alt: #f4e2ab;
+  --sv-border-dark: #6b4226;
+  --sv-border-mid: #a9713f;
+  --sv-text: #4a2f1c;
+  --sv-text-muted: #8a6a4a;
+  --sv-green: #6ea23b;
+  --sv-green-dark: #4c7a28;
+  --sv-gold: #eab040;
+  --sv-gold-dark: #c17f24;
+  --sv-red: #c0503a;
+  --sv-blue: #5b8fc0;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-sv-panel: var(--sv-panel);
+  --color-sv-panel-alt: var(--sv-panel-alt);
+  --color-sv-border-dark: var(--sv-border-dark);
+  --color-sv-border-mid: var(--sv-border-mid);
+  --color-sv-text: var(--sv-text);
+  --color-sv-text-muted: var(--sv-text-muted);
+  --color-sv-green: var(--sv-green);
+  --color-sv-green-dark: var(--sv-green-dark);
+  --color-sv-gold: var(--sv-gold);
+  --color-sv-gold-dark: var(--sv-gold-dark);
+  --color-sv-red: var(--sv-red);
+  --color-sv-blue: var(--sv-blue);
+  --font-pixel-heading: var(--font-pixel-heading);
+  --font-pixel-body: var(--font-pixel-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-radius: 0 !important; /* blocky pixel-art edges everywhere, no rounded corners */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--sv-text);
+  font-family: var(--font-pixel-body), monospace;
+  font-size: 18px;
+}
+
+.sv-sky {
+  background: linear-gradient(180deg, #bfe8c9 0%, #d9e9a6 45%, #f2debb 100%);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-pixel-heading), sans-serif;
+}
+
+/* -------------------- Nav -------------------- */
+
+.sv-nav {
+  background: var(--sv-border-dark);
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.25);
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sv-nav-title {
+  font-family: var(--font-pixel-heading), sans-serif;
+  font-weight: 700;
+  color: var(--sv-gold);
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.sv-nav-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sv-nav-link {
+  font-family: var(--font-pixel-body), monospace;
+  font-size: 1.15rem;
+  color: var(--sv-panel);
+  padding: 0.35rem 0.75rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+
+.sv-nav-link:hover {
+  background: var(--sv-border-mid);
+  border-color: var(--sv-gold);
+  color: var(--sv-gold);
+}
+
+/* -------------------- Panels -------------------- */
+
+.sv-panel {
+  background: var(--sv-panel);
+  border: 4px solid var(--sv-border-dark);
+  box-shadow:
+    inset 0 0 0 3px var(--sv-panel-alt),
+    4px 4px 0 0 rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+}
+
+.sv-panel-header {
+  font-family: var(--font-pixel-heading), sans-serif;
+  font-size: 1.4rem;
+  color: var(--sv-text);
+  border-bottom: 3px dashed var(--sv-border-mid);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* -------------------- Buttons -------------------- */
+
+.sv-btn {
+  font-family: var(--font-pixel-body), monospace;
+  font-size: 1.1rem;
+  background: var(--sv-panel-alt);
+  color: var(--sv-text);
+  border: 3px solid var(--sv-border-dark);
+  box-shadow: 0 4px 0 0 var(--sv-border-dark);
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
+}
+
+.sv-btn:hover {
+  background: var(--sv-gold);
+}
+
+.sv-btn:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.sv-btn-primary {
+  background: var(--sv-green);
+  color: #fff;
+  border-color: var(--sv-green-dark);
+  box-shadow: 0 4px 0 0 var(--sv-green-dark);
+}
+
+.sv-btn-primary:hover {
+  background: var(--sv-green-dark);
+}
+
+/* -------------------- Form controls -------------------- */
+
+.sv-input,
+.sv-select {
+  font-family: var(--font-pixel-body), monospace;
+  font-size: 1.05rem;
+  background: #fffaf0;
+  color: var(--sv-text);
+  border: 3px solid var(--sv-border-mid);
+  padding: 0.3rem 0.5rem;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  outline: none;
+  border-color: var(--sv-gold-dark);
+}
+
+/* -------------------- Table -------------------- */
+
+.sv-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1rem;
+}
+
+.sv-table thead th {
+  background: var(--sv-border-dark);
+  color: var(--sv-gold);
+  font-family: var(--font-pixel-heading), sans-serif;
+  font-size: 0.95rem;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.sv-table tbody tr:nth-child(odd) {
+  background: var(--sv-panel-alt);
+}
+
+.sv-table tbody tr:nth-child(even) {
+  background: var(--sv-panel);
+}
+
+.sv-table td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 2px solid var(--sv-panel-alt);
+}
+
+/* -------------------- Progress bar (coverage %) -------------------- */
+
+.sv-progress-track {
+  background: var(--sv-panel-alt);
+  border: 2px solid var(--sv-border-dark);
+  height: 14px;
+  width: 100%;
+}
+
+.sv-progress-fill {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--sv-green) 0px,
+    var(--sv-green) 6px,
+    var(--sv-green-dark) 6px,
+    var(--sv-green-dark) 8px
+  );
+  height: 100%;
+}
+
+/* -------------------- Badges / tags -------------------- */
+
+.sv-badge {
+  display: inline-block;
+  font-family: var(--font-pixel-body), monospace;
+  font-size: 0.85rem;
+  padding: 0.1rem 0.5rem;
+  border: 2px solid var(--sv-border-dark);
+  background: var(--sv-gold);
+  color: var(--sv-text);
+}
+
+.sv-badge-weak {
+  background: var(--sv-red);
+  color: #fff;
 }

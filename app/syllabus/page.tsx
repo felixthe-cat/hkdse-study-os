@@ -13,9 +13,9 @@ export default function SyllabusPage() {
 
   return (
     <div className="space-y-8">
-      <h1 className="text-xl font-semibold">Syllabus Checklist</h1>
-      <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded p-2">
-        Topics below are placeholders — swap in the real HKDSE syllabus topics per subject in{" "}
+      <h1 className="text-2xl">🌱 Crop Fields — Syllabus Checklist</h1>
+      <p className="sv-panel !bg-[var(--sv-gold)] text-sv-text">
+        🚧 Topics below are placeholders — swap in the real HKDSE syllabus topics per subject in{" "}
         <code>lib/types.ts</code> (<code>SYLLABUS_TOPICS</code>).
       </p>
       {SUBJECTS.map((subject) => {
@@ -26,20 +26,29 @@ export default function SyllabusPage() {
         const coverage = topics.length === 0 ? 0 : Math.round((confident / topics.length) * 100);
 
         return (
-          <div key={subject} className="bg-white rounded-lg border p-4">
-            <div className="flex justify-between items-center mb-2">
-              <h2 className="font-semibold">{SUBJECT_LABELS[subject]}</h2>
-              <span className="text-sm text-slate-500">Coverage: {coverage}%</span>
+          <div key={subject} className="sv-panel">
+            <div className="flex justify-between items-center sv-panel-header">
+              <span>{SUBJECT_LABELS[subject]}</span>
+              <span className="sv-badge">🌾 {coverage}% grown</span>
             </div>
-            <ul className="space-y-1">
+            <ul className="space-y-2">
               {topics.map((topic) => {
                 const key = `${subject}::${topic}`;
+                const status = topicStatus[key] ?? "not_started";
                 return (
-                  <li key={key} className="flex items-center justify-between text-sm">
-                    <span>{topic}</span>
+                  <li
+                    key={key}
+                    className="flex items-center justify-between gap-2 bg-sv-panel-alt border-2 border-sv-border-mid px-3 py-1.5"
+                  >
+                    <span className="flex items-center gap-2">
+                      <span>
+                        {status === "confident" ? "🌻" : status === "studying" ? "🌿" : "🌱"}
+                      </span>
+                      {topic}
+                    </span>
                     <select
-                      className="border rounded px-1 py-0.5"
-                      value={topicStatus[key] ?? "not_started"}
+                      className="sv-select"
+                      value={status}
                       onChange={(e) =>
                         setTopicStatus({
                           ...topicStatus,

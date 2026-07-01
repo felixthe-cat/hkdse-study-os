@@ -13,7 +13,7 @@ export default function ScoresPage() {
 
   return (
     <div className="space-y-10">
-      <h1 className="text-xl font-semibold">Score Log & Trend</h1>
+      <h1 className="text-2xl">⭐ Harvest Log — Score Trends</h1>
       {SUBJECTS.map((subject) => {
         const entries = Object.entries(attempts)
           .filter(([id, a]) => paperById[id]?.subject === subject && a.score != null && a.totalMarks && a.dateAttempted)
@@ -25,31 +25,31 @@ export default function ScoresPage() {
         const labels = entries.map(([id, a]) => `${paperById[id].paperType} (${a.dateAttempted})`);
 
         return (
-          <div key={subject} className="bg-white rounded-lg border p-4 space-y-3">
-            <h2 className="font-semibold">{SUBJECT_LABELS[subject]}</h2>
+          <div key={subject} className="sv-panel space-y-3">
+            <h2 className="sv-panel-header">{SUBJECT_LABELS[subject]}</h2>
             <TrendChart values={values} labels={labels} />
-            <table className="w-full text-sm">
-              <thead className="text-left text-slate-500">
+            <table className="sv-table">
+              <thead>
                 <tr>
-                  <th className="py-1">Date</th>
-                  <th className="py-1">Paper</th>
-                  <th className="py-1">Score</th>
-                  <th className="py-1">%</th>
-                  <th className="py-1">Time (min)</th>
+                  <th>Date</th>
+                  <th>Paper</th>
+                  <th>Score</th>
+                  <th>%</th>
+                  <th>Time (min)</th>
                 </tr>
               </thead>
               <tbody>
                 {entries.map(([id, a]) => (
-                  <tr key={id} className="border-t">
-                    <td className="py-1">{a.dateAttempted}</td>
-                    <td className="py-1">
+                  <tr key={id}>
+                    <td>{a.dateAttempted}</td>
+                    <td>
                       {paperById[id].year} {paperById[id].paperType}
                     </td>
-                    <td className="py-1">
+                    <td>
                       {a.score} / {a.totalMarks}
                     </td>
-                    <td className="py-1">{Math.round((a.score! / a.totalMarks!) * 100)}%</td>
-                    <td className="py-1">{a.timeTakenMin ?? "—"}</td>
+                    <td>{Math.round((a.score! / a.totalMarks!) * 100)}%</td>
+                    <td>{a.timeTakenMin ?? "—"}</td>
                   </tr>
                 ))}
               </tbody>
@@ -58,7 +58,7 @@ export default function ScoresPage() {
         );
       })}
       {Object.values(attempts).every((a) => a.score == null) && (
-        <p className="text-sm text-slate-400">
+        <p className="text-sv-text-muted italic">
           No scored attempts yet — log scores from the Past Papers tracker.
         </p>
       )}

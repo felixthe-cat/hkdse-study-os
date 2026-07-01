@@ -31,18 +31,18 @@ export default function DayList() {
   }
 
   return (
-    <div className="bg-white rounded-lg border p-4">
-      <h2 className="font-semibold mb-3">Today&apos;s List</h2>
-      <div className="flex gap-2 mb-3">
+    <div className="sv-panel">
+      <h2 className="sv-panel-header">📋 Today&apos;s To-Do List</h2>
+      <div className="flex gap-2 mb-3 flex-wrap">
         <input
-          className="flex-1 border rounded px-2 py-1 text-sm"
+          className="sv-input flex-1 min-w-[160px]"
           placeholder="Add something to do today..."
           value={text}
           onChange={(e) => setText(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && addItem()}
         />
         <select
-          className="border rounded px-2 py-1 text-sm"
+          className="sv-select"
           value={category}
           onChange={(e) => setCategory(e.target.value as DayListCategory)}
         >
@@ -50,31 +50,32 @@ export default function DayList() {
             <option key={c}>{c}</option>
           ))}
         </select>
-        <button
-          onClick={addItem}
-          className="bg-slate-900 text-white text-sm rounded px-3 py-1"
-        >
-          Add
+        <button onClick={addItem} className="sv-btn sv-btn-primary">
+          + Add
         </button>
       </div>
       {todaysItems.length === 0 ? (
-        <p className="text-sm text-slate-400">Nothing on today&apos;s list yet.</p>
+        <p className="text-sv-text-muted italic">Nothing on today&apos;s list yet.</p>
       ) : (
-        <ul className="space-y-1">
+        <ul className="space-y-2">
           {todaysItems.map((item) => (
-            <li key={item.id} className="flex items-center gap-2 text-sm">
+            <li
+              key={item.id}
+              className="flex items-center gap-2 bg-sv-panel-alt border-2 border-sv-border-mid px-2 py-1"
+            >
               <input
                 type="checkbox"
                 checked={item.done}
                 onChange={() => toggleDone(item.id)}
+                className="w-4 h-4 accent-[var(--sv-green)]"
               />
-              <span className={item.done ? "line-through text-slate-400 flex-1" : "flex-1"}>
+              <span className={item.done ? "line-through text-sv-text-muted flex-1" : "flex-1"}>
                 {item.text}
               </span>
-              <span className="text-xs text-slate-400">{item.category}</span>
+              <span className="sv-badge">{item.category}</span>
               <button
                 onClick={() => removeItem(item.id)}
-                className="text-slate-400 hover:text-red-500 text-xs"
+                className="text-sv-text-muted hover:text-sv-red text-lg leading-none px-1"
               >
                 ✕
               </button>

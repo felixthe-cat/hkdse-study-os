@@ -18,35 +18,37 @@ export default function PapersPage() {
 
   return (
     <div className="space-y-8">
-      <h1 className="text-xl font-semibold">Past Paper Tracker</h1>
+      <h1 className="text-2xl">📜 Quest Log — Past Papers</h1>
       {SUBJECTS.map((subject) => {
         const subjectPapers = papers.filter((p) => p.subject === subject);
         if (subjectPapers.length === 0) return null;
         return (
-          <div key={subject}>
-            <h2 className="font-semibold mb-2">{SUBJECT_LABELS[subject]}</h2>
-            <table className="w-full text-sm bg-white border rounded-lg overflow-hidden">
-              <thead className="bg-slate-100 text-left">
+          <div key={subject} className="sv-panel !p-0 overflow-hidden">
+            <h2 className="sv-panel-header !m-0 !border-0 px-4 pt-3">
+              {SUBJECT_LABELS[subject]}
+            </h2>
+            <table className="sv-table">
+              <thead>
                 <tr>
-                  <th className="p-2">Year</th>
-                  <th className="p-2">Paper</th>
-                  <th className="p-2">Status</th>
-                  <th className="p-2">Date</th>
-                  <th className="p-2">Score</th>
-                  <th className="p-2">/ Total</th>
-                  <th className="p-2">Time (min)</th>
+                  <th>Year</th>
+                  <th>Paper</th>
+                  <th>Status</th>
+                  <th>Date</th>
+                  <th>Score</th>
+                  <th>/ Total</th>
+                  <th>Time (min)</th>
                 </tr>
               </thead>
               <tbody>
                 {subjectPapers.map((paper) => {
                   const attempt = attempts[paper.id] ?? { status: "not_started" as AttemptStatus };
                   return (
-                    <tr key={paper.id} className="border-t">
-                      <td className="p-2">{paper.year}</td>
-                      <td className="p-2">{paper.paperType}</td>
-                      <td className="p-2">
+                    <tr key={paper.id}>
+                      <td>{paper.year}</td>
+                      <td>{paper.paperType}</td>
+                      <td>
                         <select
-                          className="border rounded px-1 py-0.5"
+                          className="sv-select"
                           value={attempt.status}
                           onChange={(e) => {
                             const status = e.target.value as AttemptStatus;
@@ -66,20 +68,20 @@ export default function PapersPage() {
                           ))}
                         </select>
                       </td>
-                      <td className="p-2">
+                      <td>
                         <input
                           type="date"
-                          className="border rounded px-1 py-0.5"
+                          className="sv-input"
                           value={attempt.dateAttempted ?? ""}
                           onChange={(e) =>
                             updateAttempt(paper.id, { dateAttempted: e.target.value })
                           }
                         />
                       </td>
-                      <td className="p-2">
+                      <td>
                         <input
                           type="number"
-                          className="border rounded px-1 py-0.5 w-16"
+                          className="sv-input w-16"
                           value={attempt.score ?? ""}
                           onChange={(e) =>
                             updateAttempt(paper.id, {
@@ -88,10 +90,10 @@ export default function PapersPage() {
                           }
                         />
                       </td>
-                      <td className="p-2">
+                      <td>
                         <input
                           type="number"
-                          className="border rounded px-1 py-0.5 w-16"
+                          className="sv-input w-16"
                           value={attempt.totalMarks ?? ""}
                           onChange={(e) =>
                             updateAttempt(paper.id, {
@@ -101,10 +103,10 @@ export default function PapersPage() {
                           }
                         />
                       </td>
-                      <td className="p-2">
+                      <td>
                         <input
                           type="number"
-                          className="border rounded px-1 py-0.5 w-16"
+                          className="sv-input w-16"
                           value={attempt.timeTakenMin ?? ""}
                           onChange={(e) =>
                             updateAttempt(paper.id, {
