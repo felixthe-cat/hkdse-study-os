@@ -239,3 +239,101 @@ h3 {
   background: var(--sv-red);
   color: #fff;
 }
+
+/* -------------------- Village (dashboard scene) -------------------- */
+
+.sv-village {
+  position: relative;
+  background: linear-gradient(180deg, #bfe8c9 0%, #a8d98f 70%, #9bcf82 100%);
+  border: 4px solid var(--sv-border-dark);
+  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2);
+  padding: 2.5rem 1.5rem 0;
+  overflow: hidden;
+}
+
+.sv-village-path {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.5rem;
+  background: #d9b877;
+  border-top: 4px solid #b8935a;
+}
+
+.sv-village-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+
+.sv-building {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+}
+
+.sv-building-roof {
+  width: 0;
+  height: 0;
+  border-left: 72px solid transparent;
+  border-right: 72px solid transparent;
+  border-bottom: 46px solid var(--roof-color, var(--sv-border-dark));
+  filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.25));
+}
+
+.sv-building-wall {
+  width: 132px;
+  background: var(--sv-panel);
+  border: 4px solid var(--sv-border-dark);
+  border-top: none;
+  padding: 0.4rem 0.4rem 0.6rem;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: background 0.1s ease;
+}
+
+.sv-building:hover .sv-building-wall {
+  background: var(--sv-panel-alt);
+}
+
+.sv-building.selected .sv-building-wall {
+  outline: 3px dashed var(--sv-gold-dark);
+  outline-offset: 2px;
+}
+
+.sv-building-icon {
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.sv-building-door {
+  width: 26px;
+  height: 34px;
+  background: var(--sv-border-dark);
+  border: 2px solid #2e1c10;
+  margin: 0.3rem auto 0.25rem;
+}
+
+.sv-building-label {
+  font-family: var(--font-pixel-heading), sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.1;
+}
+
+.sv-building-badge {
+  font-size: 0.7rem;
+  color: var(--sv-text-muted);
+  margin-top: 0.15rem;
+}
