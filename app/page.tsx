@@ -1,65 +1,85 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Link from "next/link";
+import DayList from "@/components/DayList";
+import papersData from "@/lib/papers-data.json";
+import { useLocalStorageState } from "@/lib/storage";
+import { computeSubjectStats } from "@/lib/compute";
+import { Attempt, Paper, SUBJECTS, SUBJECT_LABELS, SYLLABUS_TOPICS, TopicStatus } from "@/lib/types";
+
+const papers = papersData as Paper[];
+
+const TREND_ARROW = { up: "↑", down: "↓", flat: "→" } as const;
+
+export default function Dashboard() {
+  const [attempts] = useLocalStorageState<Record<string, Attempt>>("attempts", {});
+  const [topicStatus] = useLocalStorageState<Record<string, TopicStatus>>("topicStatus", {});
+
+  const weakSubjects = SUBJECTS.filter((subject) => {
+    const paperIds = papers.filter((p) => p.subject === subject).map((p) => p.id);
+    return computeSubjectStats(subject, attempts, paperIds, topicStatus, SYLLABUS_TOPICS[subject])
+      .weak;
+  });
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="space-y-6">
+      <DayList />
+
+      {weakSubjects.length > 0 && (
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 text-sm text-amber-900">
+          <strong>Weak subjects:</strong> {weakSubjects.map((s) => SUBJECT_LABELS[s]).join(", ")}{" "}
+          — recent attempts averaging below 60%.
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      )}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {SUBJECTS.map((subject) => {
+          const paperIds = papers.filter((p) => p.subject === subject).map((p) => p.id);
+          const stats = computeSubjectStats(
+            subject,
+            attempts,
+            paperIds,
+            topicStatus,
+            SYLLABUS_TOPICS[subject]
+          );
+          return (
+            <div key={subject} className="bg-white rounded-lg border p-4 space-y-2">
+              <h3 className="font-semibold">{SUBJECT_LABELS[subject]}</h3>
+              <div className="text-sm text-slate-600">
+                Coverage: {stats.coveragePct}%
+              </div>
+              <div className="text-sm text-slate-600">
+                Last score:{" "}
+                {stats.lastScorePct != null ? `${Math.round(stats.lastScorePct)}%` : "—"}{" "}
+                {stats.trend && (
+                  <span
+                    className={
+                      stats.trend === "up"
+                        ? "text-green-600"
+                        : stats.trend === "down"
+                        ? "text-red-600"
+                        : "text-slate-400"
+                    }
+                  >
+                    {TREND_ARROW[stats.trend]}
+                  </span>
+                )}
+              </div>
+              <div className="flex gap-3 text-xs pt-1">
+                <Link href="/papers" className="text-blue-600 hover:underline">
+                  Papers
+                </Link>
+                <Link href="/scores" className="text-blue-600 hover:underline">
+                  Scores
+                </Link>
+                <Link href="/syllabus" className="text-blue-600 hover:underline">
+                  Syllabus
+                </Link>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

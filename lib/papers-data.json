@@ -1,0 +1,1437 @@
+[
+  {
+    "id": "Chemistry-2012-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2012,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2012-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2012,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2013-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2013,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2013-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2013,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2014-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2014,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2014-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2014,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2015-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2015,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2015-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2015,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2016-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2016,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2016-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2016,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2017-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2017,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2017-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2017,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2018-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2018,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2018-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2018,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2019-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2019,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2019-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2019,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2020-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2020,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2020-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2020,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2021-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2021,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2021-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2021,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2022-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2022,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2022-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2022,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chemistry-2023-1",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2023,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chemistry-2023-2",
+    "subject": "Chemistry",
+    "subjectLabel": "Chemistry",
+    "year": 2023,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2012-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2012,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2012-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2012,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2012-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2012,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2012-4",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2012,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Chinese_Language-2012-5",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2012,
+    "paperType": "Paper 5"
+  },
+  {
+    "id": "Chinese_Language-2013-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2013,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2013-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2013,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2013-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2013,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2013-4",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2013,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Chinese_Language-2013-5",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2013,
+    "paperType": "Paper 5"
+  },
+  {
+    "id": "Chinese_Language-2014-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2014,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2014-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2014,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2014-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2014,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2014-4",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2014,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Chinese_Language-2014-5",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2014,
+    "paperType": "Paper 5"
+  },
+  {
+    "id": "Chinese_Language-2015-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2015,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2015-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2015,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2015-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2015,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2015-4",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2015,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Chinese_Language-2015-5",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2015,
+    "paperType": "Paper 5"
+  },
+  {
+    "id": "Chinese_Language-2016-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2016,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2016-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2016,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2016-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2016,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2016-4",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2016,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Chinese_Language-2017-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2017,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2017-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2017,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2017-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2017,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2017-4",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2017,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Chinese_Language-2018-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2018,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2018-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2018,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2018-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2018,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2018-4",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2018,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Chinese_Language-2019-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2019,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2019-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2019,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2019-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2019,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2019-4",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2019,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Chinese_Language-2020-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2020,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2020-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2020,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2020-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2020,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2021-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2021,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2021-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2021,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2021-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2021,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2022-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2022,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2022-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2022,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2022-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2022,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "Chinese_Language-2023-1",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2023,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Chinese_Language-2023-2",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2023,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Chinese_Language-2023-3",
+    "subject": "Chinese_Language",
+    "subjectLabel": "Chinese Language",
+    "year": 2023,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2012-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2012,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2012-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2012,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2012-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2012,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2012-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2012,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "English_Language-2013-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2013,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2013-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2013,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2013-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2013,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2013-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2013,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "English_Language-2014-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2014,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2014-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2014,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2014-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2014,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2014-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2014,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "English_Language-2015-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2015,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2015-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2015,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2015-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2015,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2015-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2015,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "English_Language-2016-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2016,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2016-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2016,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2016-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2016,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2016-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2016,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "English_Language-2017-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2017,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2017-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2017,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2017-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2017,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2017-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2017,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "English_Language-2018-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2018,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2018-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2018,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2018-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2018,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2018-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2018,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "English_Language-2019-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2019,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2019-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2019,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2019-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2019,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2019-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2019,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "English_Language-2020-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2020,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2020-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2020,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2020-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2020,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2021-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2021,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2021-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2021,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2021-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2021,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2022-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2022,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2022-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2022,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2022-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2022,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2023-1",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2023,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "English_Language-2023-2",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2023,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "English_Language-2023-3",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2023,
+    "paperType": "Paper 3"
+  },
+  {
+    "id": "English_Language-2023-4",
+    "subject": "English_Language",
+    "subjectLabel": "English Language",
+    "year": 2023,
+    "paperType": "Paper 4"
+  },
+  {
+    "id": "Geography-2012-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2012,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2012-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2012,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2013-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2013,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2013-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2013,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2014-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2014,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2014-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2014,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2015-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2015,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2015-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2015,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2016-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2016,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2016-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2016,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2017-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2017,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2017-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2017,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2018-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2018,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2018-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2018,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2019-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2019,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2019-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2019,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2020-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2020,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2020-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2020,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2021-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2021,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2021-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2021,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2022-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2022,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2022-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2022,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Geography-2023-1",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2023,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Geography-2023-2",
+    "subject": "Geography",
+    "subjectLabel": "Geography",
+    "year": 2023,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2012-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2012,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2012-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2012,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2013-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2013,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2013-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2013,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2014-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2014,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2014-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2014,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2015-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2015,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2015-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2015,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2016-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2016,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2016-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2016,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2017-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2017,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2017-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2017,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2018-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2018,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2018-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2018,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2019-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2019,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2019-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2019,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2020-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2020,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2020-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2020,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2021-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2021,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2021-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2021,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2022-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2022,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2022-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2022,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2023-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2023,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2023-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2023,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2024-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2024,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2024-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2024,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Mathematics-2025-1",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2025,
+    "paperType": "Paper 1"
+  },
+  {
+    "id": "Mathematics-2025-2",
+    "subject": "Mathematics",
+    "subjectLabel": "Mathematics",
+    "year": 2025,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2012-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2012,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2012-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2012,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2012-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2012,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2013-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2013,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2013-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2013,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2013-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2013,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2014-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2014,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2014-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2014,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2014-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2014,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2015-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2015,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2015-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2015,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2015-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2015,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2016-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2016,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2016-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2016,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2016-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2016,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2017-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2017,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2017-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2017,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2017-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2017,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2018-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2018,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2018-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2018,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2018-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2018,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2019-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2019,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2019-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2019,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2019-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2019,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2020-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2020,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2020-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2020,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2020-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2020,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2021-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2021,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2021-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2021,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2021-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2021,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2022-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2022,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2022-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2022,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2022-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2022,
+    "paperType": "Paper 2"
+  },
+  {
+    "id": "Physics-2023-1a",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2023,
+    "paperType": "Paper 1A"
+  },
+  {
+    "id": "Physics-2023-1b",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2023,
+    "paperType": "Paper 1B"
+  },
+  {
+    "id": "Physics-2023-2",
+    "subject": "Physics",
+    "subjectLabel": "Physics",
+    "year": 2023,
+    "paperType": "Paper 2"
+  }
+]
